@@ -1,0 +1,15 @@
+let x=3.141;
+let y=5;
+let z=4;
+let min,max;
+// x=Math.round(x);
+// x=Math.ceil(x);
+// x=Math.floor(x);
+// x=Math.pow(x,2);
+// x=Math.sqrt(x);
+// x=Math.abs(x);
+min=Math.min(x,y,z);
+max=Math.max(x,y,z);
+console.log(x); 
+console.log("min=",min);
+console.log("max=",max);
