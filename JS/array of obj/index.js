@@ -13,16 +13,8 @@ const car1=new Car("ford",2020,"blue");
 const car2=new Car("bmw",2021,"yellow");
 const car3=new Car("honda",2022,"green");
 
-displayInfo(car1)
-changeColor(car1,"purple");
-displayInfo(car1);
 
-function displayInfo(car){
-    console.log(car.model);
-    console.log(car.year);
-    console.log(car.color);
-}
+const cars=[car1,car2,car3];
 
-function changeColor(car,color){
-    car.color=color;
-}
+console.log(cars[0].model);
+console.log(cars[0].year);
