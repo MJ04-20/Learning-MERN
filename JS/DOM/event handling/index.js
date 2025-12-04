@@ -1,25 +1,18 @@
-// const ele=document.getElementById("myBtn").onclick=doSomething;
-// const ele=document.body;
-// ele.onload=doSomething;
+// addeventlistener to a div 
+// you can add many event listeners to a single element
+// same event can invoke many functions
 
-let ele=document.getElementById("txt");
-ele.onchange=doSomething;
-let ele2=document.getElementById("myDiv");
+const innerDiv=document.getElementById("innerDiv");
+const outerDiv=document.getElementById("outerDiv");
 
-// ele2.onmouseover=change;
-// ele2.onmouseout=changeback;
-ele2.onmousedown=change;
-ele2.onmouseup=changeback;
-function change(){
-    ele2.style.backgroundColor="blue";
+// if same event is happning we cN USE CAPTURE TO SET EHICH WWILL HAPEN FIRST
+innerDiv.addEventListener("click",changeRed);
+outerDiv.addEventListener("click",changeRed,true);
 
+
+function changeRed(){
+    // innerDiv.style.backgroundColor="red";
+    alert(`you selected ${this.id}`);
+    this.style.backgroundColor="red";
 }
 
-
-function changeback(){
-    ele2.style.backgroundColor="lightgreen";
-}
-
-function doSomething(){
-    alert("Doing something!");
-} 

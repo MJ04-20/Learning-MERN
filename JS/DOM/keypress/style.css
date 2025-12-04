@@ -1,0 +1,7 @@
+#myDiv {
+    background-color: lightgreen;
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
