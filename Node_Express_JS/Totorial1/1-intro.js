@@ -1,7 +1,11 @@
-// globals - no window
+const amount = 12;
 
-// __dirname - path to current directory
-// __filename - file name
-// require - function to use modules (CommonJS)
-// module - info about current module (file)
-// process - info about env where the program is being executed
+if(amount<10)
+{
+    console.log("small num");
+}
+else{
+    console.log(`large num`);
+}
+
+console.log(`my first node app`)  
