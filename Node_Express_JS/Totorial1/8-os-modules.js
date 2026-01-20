@@ -17,4 +17,4 @@ const currentOs={
     freeMem:`${os.freemem()/1024/1024/1024} GB`,
 }
 
-console.log(currentOs);
+console.log(currentOs); 
