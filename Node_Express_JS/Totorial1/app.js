@@ -1,9 +1,9 @@
-const path = require('path');
+const {readFile,writeFile}=require('fs');
 
-console.log(path.sep);
-
-const filepath=path.join('/content','subfolder','test.txt');
-console.log(filepath);
-
-const base=path.basename(filepath);
-console.log(base);
+ readFile('./content/first.txt','utf-8',(err,result)=>{
+    if(err){
+        console.log(err)
+        return
+    }
+    console.log(result)
+ })
